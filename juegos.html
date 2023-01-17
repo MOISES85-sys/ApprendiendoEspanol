@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css">
+    <header>
+        <br><br>
+        <a href="index.html"><img src="LOGO.png" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+        
+              <li><a href="Vocabulario.html">Vocabulario</a></li>
+              <li><a href="Audios.html">Audios</a></li>
+              <li><a href="Lecturas.html">Lecturas</a></li>
+              <li><a href="Ejercicios.html">Ejercicios</a></li>
+              <li><a href="juegos.html".html">Juegos</a></li>
+              <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+          </nav>
+      </header>
+      <br><br><br><br><br><br><br><br><br>
+      <br>
+    <h4  for="oracion">Encuentra las palabras ["silla", "mesa", "perro", "gato", "computadora"] dentro de la sopa de letras</h4>
+    <br><br><br><br>
+    <style>
+    /*Estilos para la sopa de letras*/
+    table {
+        
+        width: 400px;
+        height: 500px;
+        text-align: center;
+        font-size: 24px;
+        margin-top: auto;
+        margin-left: 400px;
+        background-color: rgb(255, 255, 254);
+    }
+    td {
+        border: 1px solid rgb(4, 67, 254);
+        width: 70px;
+        height: 50px;
+        text-align: center;
+    }
+    /*Estilos para las palabras encontradas*/
+    .word-found {
+        background-color: rgb(21, 255, 0);
+    }
+    </style>
+  </head>
+  <body>
+    <table id="word-search">
+    </table>
+    <script>
+    //Lista de palabras en español
+    const wordsList = ["silla", "mesa", "perro", "gato", "computadora"];
+    //Matriz de letras aleatorias
+    let matrix = [];
+    //Llenando la matriz con letras aleatorias
+    for (let i = 0; i < 10; i++) {
+        matrix[i] = [];
+        for (let j = 0; j < 10; j++) {
+            matrix[i][j] = String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+        }
+    }
+    //Añadiendo las palabras a la matriz
+    for (let i = 0; i < wordsList.length; i++) {
+        let word = wordsList[i];
+        let row = Math.floor(Math.random() * 10);
+
+        let col = Math.floor(Math.random() * 10);
+        let direction = Math.floor(Math.random() * 2);
+        if (direction === 0) {
+            // insert word horizontally
+            for (let j = 0; j < word.length; j++) {
+                matrix[row][col + j] = word[j];
+            }
+        } else {
+            // insert word vertically
+            for (let j = 0; j < word.length; j++) {
+                matrix[row + j][col] = word[j];
+            }
+        }
+    }
+    //Creando la tabla en HTML
+    let table = document.getElementById("word-search");
+    for (let i = 0; i < matrix.length; i++) {
+        let row = table.insertRow(-1);
+        for (let j = 0; j < matrix[i].length; j++) {
+            let cell = row.insertCell(-1);
+            cell.innerHTML = matrix[i][j];
+        }
+    }
+    //Añadiendo el evento de clic a cada celda
+    let cells = document.getElementsByTagName("td");
+    let selectedWord = "";
+    for (let i = 0; i < cells.length; i++) {
+        cells[i].addEventListener("mousedown", function() {
+            selectedWord = this.innerHTML;
+        });
+        cells[i].addEventListener("mouseover", function() {
+            if (event.buttons === 1) {
+                this.style
+                selectedWord += this.innerHTML;
+            }
+        });
+        cells[i].addEventListener("mouseup", function() {
+            if (wordsList.includes(selectedWord)) {
+                alert("Correcto, encontraste la palabra : " + selectedWord);
+                let cellsToColor = document.getElementsByClassName(selectedWord);
+                for (let j = 0; j < cellsToColor.length; j++) {
+                    cellsToColor[j].classList.add("word-found");
+                }
+            } else {
+                alert("Incorrecto, Intenta de nuevo.");
+            }
+            selectedWord = "";
+        });
+    }
+    </script>
+    <br><br><br><br><br>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Audios-2</title>
+</head>
+<body>
+    <header>
+        <br><br>
+        <a href="index.html"><img src="LOGO.png" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+        
+              <li><a href="Vocabulario.html">Vocabulario</a></li>
+              <li><a href="Audios.html">Audios</a></li>
+              <li><a href="Lecturas.html">Lecturas</a></li>
+              <li><a href="Ejercicios.html">Ejercicios</a></li>
+              <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+          </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+    <u><h1>Audios - Nivel 2:</h1></u>
+    <h3> - ¿Qué dijo?...</h3>
+    <h4>-Reproduce el audio y escribe lo que escuchaste</h4>
+    <br><br><br><br>
+    <div class="principal">
+      <div class="secundario"><img class="secuna" src="cara-feliz2.png" alt="imagen/png"></div>
+      <div class="ternario">
+        <audio id="ter" src="AudioMujer.ogv" type="audio/ogg" controls> 
+         
+        </audio>
+      </div>
+    </div>
+    <form>
+      <input type="text" id="name" name="name">
+      <br>
+      <button type="button" id="btn"  onclick="validate()">Validar</button>
+    </form>
+    <script>
+    function validate() {
+      var userInput = document.getElementById("name").value.toLowerCase();
+      var expectedInput = "Hola vivo en la ciudad de méxico".toLowerCase();
+      if (userInput === expectedInput) {
+        alert("¡La respuesta es correcta!");
+        btn.style.backgroundColor = "green";
+        alert("¡F E L I C I D A D E S, G A N A S T E!")
+      } else {
+        alert("Entrada incorrecta. Por favor intenta de nuevo.");
+        btn.style.backgroundColor = "red";
+      }
+    }
+    </script>
+    <footer>
+        <br>
+        <p> Todos los derechos reservados 2023</p> 
+      </footer>
+</body>
+</html>

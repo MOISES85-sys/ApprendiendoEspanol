@@ -1,0 +1,659 @@
+#logo
+{
+    height: 300px;
+    float: none;
+    margin-left: 45px; 
+    
+}
+img
+{
+    height: 150px;
+    float: left;
+    margin-left: 150px; 
+    margin-right: auto;
+    margin-top: -30px;
+    
+}
+h1
+{
+    padding: 20px;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 50px;
+   
+}
+h3
+{
+    font-size: 30px;
+    margin-left: 130px;
+}
+button
+{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 55px;
+    font-weight:700;
+    font-size: 120%;
+    padding: auto;
+    color: #000000;
+    text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 15px;
+}
+#lecturas
+{
+    background-color: rgb(4, 223, 165);
+    box-shadow: inset 0px 0px 6px rgb(59, 0, 0);
+}
+#audios
+{
+    background-color: rgb(246, 255, 0);
+    box-shadow: inset 0px 0px 6px rgb(11, 11, 105);
+}
+#vocabulario
+{
+    background-color: rgb(239, 46, 36);
+    box-shadow: inset 0px 0px 6px rgb(66, 66, 7);
+}
+#ejercicios
+{
+    background-color:rgb(6, 79, 195);
+    box-shadow: inset 0px 0px 6px rgb(54, 54, 54);
+}
+#ayuda
+{
+    background-color: rgb(11, 181, 238);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#juegos
+{
+    background-color: rgb(40, 152, 0);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#basico
+{
+    background-color: rgb(239, 71, 111);
+    box-shadow: inset 0px 0px 6px rgb(1, 24, 1);
+}
+#intermedio
+{
+    background-color: rgb(255, 209, 102);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#avanzado
+{
+    background-color: rgb(52, 152, 52);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#paises
+{
+    background-color: rgb(239, 71, 111);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#animales
+{
+    background-color: rgb(255, 209, 102);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#ropa
+{
+    background-color: rgb(52, 152, 52);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#herramientas
+{
+    background-color: rgb(6, 214, 160);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#verbos
+{
+    background-color: rgb(17, 138, 178);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+#idiomas
+{
+    background-color: rgb(7, 59, 76);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+button:hover
+{
+    border: 3px solid;
+}
+footer
+{
+    text-align: center;
+}
+header
+{
+    width: 100%;
+    background-color: #ffffff;
+    height: 170px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    position: fixed;   
+}
+nav
+{
+    width: 70%;
+    height: 70px;
+    float: left;
+}
+.container
+{
+    
+    padding: 1em;
+    overflow: hidden;
+    
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  letter-spacing: 1.1px;
+}
+html 
+{
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  font-family: "Arial", sans-serif;
+}
+.menu
+{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    max-width: 50px;
+    margin:  50px;
+    height: 130vh;
+    list-style: none;
+    float: right;
+    margin-left: auto; 
+    margin-right: 500px;
+}
+.menu li 
+{
+  width: 125px;
+  height: 50px;
+  transition: background-position-x 0.9s linear;
+  text-align: center;
+}
+.menu li a {
+  font-size: 22px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.45s;
+}
+.menu li:hover {
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
+  -webkit-animation: line 2s;
+          animation: line 2s;
+}
+.menu li:hover a {
+  color: #ff0000;
+}
+.menu li:not(:last-child) {
+  margin-right: 30px;
+}
+
+@-webkit-keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+@keyframes line {
+  0% {
+    background-position-x: 390px;
+  }
+}
+
+.divpadre
+{
+    height: 700px;
+    width: 1000px;
+    background-color: #ffffff;
+    margin-left: 200px;
+    
+    float:inline-start;
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+.divhijo
+{
+    height: 250px;
+    width: 200px;
+    background-color: #ffffff;
+    margin: 50px;
+    margin-left: 70px;
+    
+    
+}
+.chiri
+{
+    height: 150px;
+    width: 150px;
+    background-color: #ffffff;
+    margin: 20px;
+    margin-left: 25px;   
+}
+.miky
+{
+    height: 40px;
+    width: 130px;
+    background-color: #ffffff;
+    margin: 20px;
+    margin-left: 35px;     
+}
+.pais
+{
+    margin-left: 0px;
+    margin-top: 0px;   
+}
+.nombrepais
+{
+    font-size: 25px;
+    text-align: center;   
+}
+.supremo
+{
+    width: 1300px;
+    height: 400px;
+    margin-left: 70px;
+    
+    display:flex;
+    flex-wrap: wrap;  
+}
+.baby
+{
+    width: 600px;
+    height: 320px;
+    margin-left:100px;
+    margin: 50px;   
+}
+.baby2
+{
+    width: 500px;
+    height: 340px;
+    margin: 40px;
+    margin-left: -50px;
+}
+.baby3
+{
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;  
+}
+.baby4
+{
+    width: 290px;
+    height: 320px;   
+    margin-left: 290px;
+    margin-top: -320px;
+}
+.baby5
+{
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    margin-top:90px;
+    margin-left:30px;
+}
+.baby6
+{
+    width: 200px;
+    height: 100px;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+.uno
+{
+    width: 250px;
+    height: 250px;
+    margin-left: 5px;
+    margin-top: 0px;
+}
+h2
+{
+    text-align: center;
+    font-size: 40px;
+}
+p
+{
+    text-align: center;
+    font-size: 30px;
+}
+.elmo
+{
+    height: 600px;
+    width: 1400px;
+    display: flex;
+    margin-left: 10px;  
+}
+.schwester
+{   
+    height: 500px;
+    width: 400px;
+    margin:auto;
+    margin-left: 30px;
+}
+.clemente
+{
+    width:250px;
+    height:250px;
+    margin-top: 50px;
+    margin-left: 75px;
+}
+.chema
+{
+    width: 280px;
+    height: 150px;   
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.fab
+{
+    width: 250px;
+    height: 250px;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+h4
+{
+    text-align: center;
+    font-size: 25px;
+    font: cursiv;
+}
+.vater
+{
+    height: 2750px;
+    width: 1300px;
+    background-color: #ffffff;
+    margin-left: 50px;
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+   
+}
+.diesohne
+{
+    height: 300px;
+    width: 700px;
+    margin-top: 50px;
+    margin-left:300px;
+}
+.pig
+{
+    height: 300px;
+    width: 700px;
+    margin-left: 0px;
+    margin-top: 40px;
+    border-radius: 50px;
+}
+.dersohne
+{
+    height: 500px;
+    width: 1200px;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+#mom
+{
+    height: 1750px;
+    width: 1300px;
+    background-color: #ffffff;
+    margin-left: 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+#pap
+{
+    height: 1700px;
+    width: 1300px;
+    background-color: #ffffff;
+    margin-left: 60px;
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 1);
+}
+.principal
+{
+    height: 250px;
+    width: 800px;
+    
+    margin-left: 300px;
+}
+.secundario
+{
+
+    height: 250px;
+    width: 300px;
+    
+    margin-left: 0px;
+}
+.ternario
+{
+
+    height: 250px;
+    width: 500px;
+    margin-left: 300px;
+    margin-top: -250px;
+}
+#secun
+{
+    height: 200px;
+    margin-left: 0px;   
+}
+#ter
+{
+    height: 250px;
+    width: 500px;
+    margin-left: -50px;
+    margin-top: -120px;
+}
+.validar
+{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 55px;
+    font-weight:700;
+    font-size: 120%;
+    padding: auto;
+    color: #000000;
+    text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 15px;
+    background-color: rgb(52, 152, 52);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);
+}
+.login
+{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 55px;
+    font-weight:700;
+    font-size: 120%;
+    padding: auto;
+    color: #000000;
+    text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 0px 0px 6px rgb(0, 37, 0);   
+}
+.secuna
+{
+    height: 100px;
+    width: 100px;
+    margin-left: 130px; 
+    margin-top: 30px;
+}
+
+
+/* SPLASH SCREEN */
+.intro
+{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    transition: 20s;
+}
+.logo-header
+{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+.logo
+{
+    position: relative;
+    display: inline-block;
+    bottom: -20px;
+    opacity: 0;
+}
+.logo :active
+{
+    bottom: 0;
+    opacity: 1;
+    transition: ease-in-out 5.0s;
+}
+.logo fade
+{
+    bottom: 150px;
+    opacity: 0;
+    transition: ease-in-out 5.0s;
+}
+.logoprin
+{
+    height: 900px;
+    width: 900px;
+    margin: 0px;
+    margin-left: 400px;
+}
+.validar:hover{
+    border: 3px solid;
+}
+.iphone
+{
+    width: 900px;
+    height: 300px;
+    margin-left: 250px;
+    display: flex;
+}
+.android 
+{
+    width: 400px;
+    height: 200px;
+    margin-left: 30px;   
+    margin-top: 40px;
+}
+#android
+{
+    width: 200px;
+    height: 200px;
+    margin-left: 120px;   
+    margin-top: 0px;
+}
+#iphone
+{
+    width: 400px;
+    height: 200px;
+    margin-left: 0px;   
+    margin-top: 90px;
+    font-size: 40px;
+    margin-left: -90px;
+}
+.handy
+{
+    width: 150px;
+    height: 80px;
+    margin-left: 100px;   
+    display: inline-block;
+    margin-top: -1000px;
+}
+
+
+body
+  {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: #333;
+  }
+  .question
+  {
+    font-weight: 100px;
+    margin-left:520px;
+    height: 10px;
+    width: 400px;
+    border-radius: 3px;
+    background-color: rgb(255, 209, 102);
+    display: inline-block;
+    
+  }
+  .answers {
+      
+      margin-right: 100px;
+      margin-top: 20px; 
+     text-align: center;
+        
+  }
+  #submit
+  {
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 55px;
+    font-weight:700;
+    font-size: 120%;
+    padding: auto;
+    color: #000000;
+    text-align: center;
+    padding: 0 0 0 0;
+    border-radius: 15px;
+    background-color: rgb(6, 214, 160);
+  }
+  #submit:hover
+  {
+    background-color: solid 3px;
+  }
+
+  #results
+  {
+      text-align: center;
+  }
+  .oracorr
+  {
+    text-align: center;
+  }
+  .datos
+  {
+    display: flex; justify-content: center;
+  }
+  input
+  {
+    display: block;
+    margin: auto;
+    height: 30px;
+  }
+  label
+  {
+    display: inline-block;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .name
+  {
+    height: 35px;
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Audios</title>
+</head>
+<body>
+    <header>
+        <br><br>
+        <a href="index.html"><img src="LOGO.png" alt="logo"></a>
+        <nav>
+            <ul class="menu">
+        
+              <li><a href="Vocabulario.html">Vocabulario</a></li>
+              <li><a href="Audios.html">Audios</a></li>
+              <li><a href="Lecturas.html">Lecturas</a></li>
+              <li><a href="Ejercicios.html">Ejercicios</a></li>
+              <li><a href="juegos.html".html">Juegos</a></li>
+              <li><a href="Ayuda.html">Ayuda</a></li>
+            </ul>
+          </nav>
+    </header>
+    <br><br><br><br><br><br><br><br><br><br>
+    <u><h1>Audios:</h1></u>
+    <h3> - ¿Qué dijo?...</h3>
+    <h4>-Reproduce el audio y escribe correctamente lo que escuchaste...</h4>
+    <br><br><br><br>
+    <div class="principal">
+      <div class="secundario"><img id="secun" src="cara-feliz.png" alt="imagen/png"></div>
+      <div class="ternario">
+        <audio id="ter" src="Audio.mp3" controls> 
+         
+        </audio>
+      </div>
+    </div>
+    <form>
+      <input type="text" id="name" name="name">
+      <br>
+      <button type="button" id="btn"  onclick="validate()">Validar</button>
+    </form>
+    <script>
+    function validate() {
+      var userInput = document.getElementById("name").value.toLowerCase();
+      var expectedInput = "mi nombre es jose".toLowerCase();
+      if (userInput === expectedInput) {
+        alert("¡La respuesta es correcta!");
+        btn.style.backgroundColor = "green";
+        window.location.href = "audios2.html";
+      } else {
+        alert("Entrada incorrecta. Por favor intenta de nuevo.");
+        btn.style.backgroundColor = "red";
+      }
+    }
+    </script>
+    
+    <br><br><br>
+    <hr>
+    <footer>
+        <br>
+        <p> Todos los derechos reservados 2023</p> 
+      </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ordena correctamente la oración</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<header>
+  <br><br>
+  <a href="index.html"><img src="LOGO.png" alt="logo"></a>
+  <nav>
+      <ul class="menu">
+  
+        <li><a href="Vocabulario.html">Vocabulario</a></li>
+        <li><a href="Audios.html">Audios</a></li>
+        <li><a href="Lecturas.html">Lecturas</a></li>
+        <li><a href="Ejercicios.html">Ejercicios</a></li>
+        <li><a href="juegos.html".html">Juegos</a></li>
+        <li><a href="Ayuda.html">Ayuda</a></li>
+      </ul>
+    </nav>
+</header>
+<br><br><br><br><br><br><br><br><br><br>
+<body>
+    <br>
+    <h1  for="oracion">Escribe la oración correctamente:</h1>
+    <br>
+    <form>
+      <label id="randomPhrase"></label><br>
+      <input type="text" id="userInput"><br>
+      <button type="button" id="btn" onclick="validate()">Validar</button>
+      <p id="result"></p>
+    </form>
+    <script>
+function init() 
+{
+  var phrase = "voy a tomar una foto";
+  var phrase_array = phrase.split(" ");
+  shuffle(phrase_array);
+  var randomPhrase = phrase_array.join(" ");
+  document.getElementById("randomPhrase").innerHTML = randomPhrase;
+}
+function shuffle(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+function validate() {
+  var correctAnswer = "voy a tomar una foto";
+  var userAnswer = document.getElementById("userInput").value;
+  if (userAnswer == correctAnswer) {
+    document.getElementById("result").innerHTML = "¡La respuesta es correcta!";
+    btn.style.backgroundColor = "green";
+  } else {
+    document.getElementById("result").innerHTML = "La respuesta es incorrecta. Intenta de nuevo.";
+    btn.style.backgroundColor = "red";
+  }
+}
+window.onload = init;
+
+    </script>
+  </head>
+  <body>
+  
+  
+  </body>
+  </html>
